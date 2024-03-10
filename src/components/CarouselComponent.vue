@@ -1,34 +1,18 @@
 <script>
 import productosJSON from '@/json/Vapers.json'
+import responsiveJSON from '@/json/responsiveOptions.json'
+import {ref, toRefs, watch} from "vue";
 
+const responsiveOptions = responsiveJSON
 const prod = productosJSON
 export default {
   name: "CarouselComponent",
+  props: ['cantidad'],
+  emits: ["change-cantidad"],
   data() {
     return {
       productos: prod,
-      responsiveOptions: [
-        {
-          breakpoint: '1400px',
-          numVisible: 2,
-          numScroll: 1
-        },
-        {
-          breakpoint: '1199px',
-          numVisible: 3,
-          numScroll: 1
-        },
-        {
-          breakpoint: '767px',
-          numVisible: 2,
-          numScroll: 1
-        },
-        {
-          breakpoint: '575px',
-          numVisible: 1,
-          numScroll: 1
-        }
-      ]
+      responsiveOptions: responsiveOptions
     }
   },
   methods: {
@@ -46,6 +30,11 @@ export default {
         default:
           return null;
       }
+    },
+    show() {
+      this.$toast.add({ severity: 'success', summary: 'Cesta', detail: 'Añadido a la cesta!!', life: 2000 });
+      const resultado = 1;
+      this.$emit('change-cantidad', resultado)
     }
   }
 }
@@ -74,8 +63,9 @@ export default {
         <div class="flex justify-content-between align-items-center">
           <div class="mt-0 font-semibold text-xl">{{ slotProps.data.precio }}€</div>
           <span>
-                  <Button icon="pi pi-shopping-cart" class="ml-2"/>
-                </span>
+            <Toast/>
+            <Button icon="pi pi-shopping-cart" class="ml-2" @click="show"/>
+          </span>
         </div>
       </div>
     </template>

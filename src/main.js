@@ -3,7 +3,7 @@ import { createPinia } from 'pinia'
 import PrimeVue from "primevue/config";
 import App from './App.vue'
 import router from './router'
-import 'primevue/resources/themes/md-dark-indigo/theme.css'
+import 'primevue/resources/themes/md-dark-deeppurple/theme.css'
 import "primeflex/primeflex.css"
 import 'primeicons/primeicons.css'
 import Menubar from "primevue/menubar";
@@ -16,6 +16,10 @@ import  Card  from 'primevue/card';
 import  InputText  from 'primevue/inputtext';
 import  Textarea  from 'primevue/textarea';
 import AutoComplete from "primevue/autocomplete";
+import BadgeDirective from "primevue/badgedirective";
+import ToastService from 'primevue/toastservice';
+import Toast from "primevue/toast";
+
 
 const pinia = createPinia()
 
@@ -24,6 +28,7 @@ const app = createApp(App)
 app.use(PrimeVue)
 app.use(router)
 app.use(pinia)
+app.use(ToastService);
 
 app.component("Menubar", Menubar)
 app.component("Toolbar", Toolbar)
@@ -35,5 +40,7 @@ app.component("Card", Card)
 app.component("InputText", InputText)
 app.component("Textarea", Textarea)
 app.component("AutoComplete", AutoComplete)
+app.directive('Badge', BadgeDirective)
+app.component('Toast', Toast)
 
 app.mount('#app')

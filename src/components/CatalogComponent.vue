@@ -4,6 +4,8 @@ import productosJSON from '@/json/Vapers.json'
 const prod = productosJSON
 export default {
   name: "CatalogComponent",
+  props: ['cantidad'],
+  emits: ["change-cantidad"],
   data() {
     return {
       productos: prod,
@@ -25,6 +27,11 @@ export default {
         default:
           return null;
       }
+    },
+    show() {
+      this.$toast.add({severity: 'success', summary: 'Cesta', detail: 'Añadido a la cesta!!', life: 2000});
+      const resultado = 1;
+      this.$emit('change-cantidad', resultado)
     }
   }
 }
@@ -62,7 +69,9 @@ export default {
                 <div class="flex flex-column gap-4 mt-4">
                   <span class="text-2xl font-semibold text-900">{{ item.precio }}€</span>
                   <div class="flex gap-2">
-                    <Button icon="pi pi-shopping-cart" label="Cómpralo ya!" :disabled="item.stock === 'OUTOFSTOCK'"
+                    <Toast/>
+                    <Button icon="pi pi-shopping-cart" @click="show" label="Cómpralo ya!"
+                            :disabled="item.stock === 'OUTOFSTOCK'"
                             class="flex-auto white-space-nowrap"></Button>
                   </div>
                 </div>
@@ -74,7 +83,3 @@ export default {
     </DataView>
   </div>
 </template>
-
-<style scoped>
-
-</style>

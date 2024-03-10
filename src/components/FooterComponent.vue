@@ -10,23 +10,17 @@ export default {
       <a href="https://www.instagram.com/vapers.castellon/" target="_blank" rel="noopener noreferrer">
         <i class="pi pi-instagram"></i>
       </a>
-      <!--        <a href="#" target="_blank" rel="noopener noreferrer">-->
-      <!--          <i class="pi pi-twitter"></i>-->
-      <!--        </a>-->
+      <a href="mailto:vapanda@gmail.com" target="_blank" rel="noopener noreferrer">
+        <i class="pi pi-envelope"></i>
+      </a>
     </div>
 
-    <div class="copyright ml-8">
-      <small>
-        Este sitio web y su contenido están protegidos por las leyes de derechos de autor y marcas registradas.<br>
-        Cualquier uso no autorizado está estrictamente prohibido.
-      </small>
-    </div>
+    <small class="ml-5">&copy; 2024 VAPANDA. Todos los derechos reservados.</small>
 
-    <small>&copy; 2024 VAPANDA. Todos los derechos reservados.</small>
-
-    <div class="location mr-5 mt-3">
+    <div class="location justify-content-center align-items-center mt-3">
       <i class="pi pi-map-marker"></i>
-      <a href="https://maps.app.goo.gl/bSofr8Nd8JsTFcW17" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none">
+      <a href="https://maps.app.goo.gl/bSofr8Nd8JsTFcW17" target="_blank" rel="noopener noreferrer"
+         class="text-white text-decoration-none">
         <span>¡Nuestra localización!</span>
       </a>
     </div>
@@ -58,9 +52,5 @@ export default {
 
 .location i {
   margin-right: 0.5rem;
-}
-
-.copyright {
-  font-size: 0.8rem;
 }
 </style>
