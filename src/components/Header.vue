@@ -11,16 +11,8 @@ export default defineComponent ({
   methods: {
     showTemplate() {
       if (!this.visible) {
-        this.$toast.add({ severity: 'contrast', summary: ' 🔥​ ¡SI NOS SIGUES EN INSTAGRAM TE REBAJAMOS HASTA UN 1€! 🔥​', group: 'bc' });
         this.visible = true;
       }
-    },
-    onReply() {
-      this.$toast.removeGroup('bc');
-      this.visible = false;
-    },
-    onClose() {
-      this.visible = false;
     }
   }
 });
@@ -30,23 +22,20 @@ export default defineComponent ({
   <Toolbar class="bg-white ">
     <template #start>
       <div class="card flex justify-content-center">
-        <Toast position="bottom-right" group="bc" @close="onClose">
-          <template #message="slotProps">
-            <div class="flex flex-column align-items-start" style="flex: 1">
-              <div class="flex align-items-center gap-2">
+        <Dialog v-model:visible="visible" modal header="¡ÚLTIMAS NOVEDADES!" :style="{ width: '50rem' }" :breakpoints="{ '1199px': '75vw', '575px': '90vw' }">
+            <div class="flex flex-column align-items-center" style="flex: 1">
+              <div class="flex align-items-center justify-content-center">
                 <img src="https://raw.githubusercontent.com/Vapanda/vapanda.github.io/master/src/images/icon.png" alt="circle" />
-                <span class="font-bold text-900 text-black-alpha-90">VAPANDA</span>
               </div>
-              <div class="font-medium text-lg my-3 text-900 text-black-alpha-90">{{ slotProps.message.summary }}</div>
+              <p class="font-medium text-lg my-3 text-900">🔥​ ¡SI NOS SIGUES EN INSTAGRAM TE REBAJAMOS HASTA UN 1€! 🔥​</p>
               <div>
                 <a href="https://www.instagram.com/vapers.castellon/" class="decoration" target="_blank">
-                <Button class="flex p-button-sm align-items-center" severity="danger" label="¡Os seguiré!" @click="onReply()"></Button>
+                  <Button class="flex p-button-sm align-items-center" severity="danger" label="¡Os seguiré!" @click="onReply()"></Button>
                 </a>
               </div>
             </div>
-          </template>
-        </Toast>
-        <Button @click="showTemplate" label="¡NOVEDAD!" severity="danger" />
+        </Dialog>
+        <Button @click="showTemplate" label="OFERTAS" severity="danger" />
       </div>
     </template>
 

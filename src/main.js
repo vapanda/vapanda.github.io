@@ -19,6 +19,8 @@ import AutoComplete from "primevue/autocomplete";
 import BadgeDirective from "primevue/badgedirective";
 import ToastService from 'primevue/toastservice';
 import Toast from "primevue/toast";
+import Dialog from "primevue/dialog";
+
 
 
 const pinia = createPinia()
@@ -42,5 +44,6 @@ app.component("Textarea", Textarea)
 app.component("AutoComplete", AutoComplete)
 app.directive('Badge', BadgeDirective)
 app.component('Toast', Toast)
+app.component('Dialog', Dialog)
 
 app.mount('#app')
