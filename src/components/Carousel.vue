@@ -66,7 +66,9 @@ export default {
           <div class="mt-0 font-semibold text-xl">{{ slotProps.data.precio }}€</div>
           <span>
             <Toast/>
-            <Button icon="pi pi-shopping-cart" class="ml-2" @click="show"/>
+            <RouterLink to="/contact" class="decoration" @click="show">
+                     <Button icon="pi pi-shopping-cart" class="ml-2" @click="show"/>
+            </RouterLink>
           </span>
         </div>
       </div>
