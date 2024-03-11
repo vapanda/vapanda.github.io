@@ -27,6 +27,7 @@ export default {
         window.location.href = `mailto:vapandavp@gmail.com?subject=Pedido VP Infinity&body=${encodeURIComponent(emailBody)}`;
       }
     },
+    // Valido con regex toda la información introducida por el usuario.
     validateForm() {
       // Expresiones regulares para validar campos
       const nombreRegex = /^[a-zA-Z\s]+$/;
@@ -57,9 +58,10 @@ export default {
   <div class="align-items-center">
     <h1 class="flex justify-content-center">CONTACTA CON UN RESPONSABLE</h1>
 
-    <RouterLink to="/" class="decoration">
-    <i class="flex justify-content-center pi pi-home" style="font-size: 25px"/>
-    </RouterLink>
+<!--    <RouterLink to="/" class="decoration">-->
+<!--    <i class="flex justify-content-center pi pi-home" style="font-size: 25px"/>-->
+<!--    </RouterLink>-->
+
     <form @submit.prevent="submitForm" class="w-33">
       <div class="p-fluid">
         <div class="p-field">

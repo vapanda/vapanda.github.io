@@ -1,14 +1,14 @@
 <template>
   <div class="card">
     <HeaderComponent/>
-    <FormComponent/>
+    <EspecificProduct/>
   </div>
   <FooterComponent/>
 </template>
 
 <script setup>
 import FooterComponent from "@/components/Footer.vue";
-import FormComponent from "@/components/Form.vue";
 import HeaderComponent from "@/components/Header.vue";
+import EspecificProduct from "@/components/EspecificProduct.vue";
 </script>
 

@@ -28,10 +28,11 @@ export default {
           return null;
       }
     },
+    // Muestro por pantalla el mensaje de redireccionando
     show() {
-      this.$toast.add({severity: 'success', summary: 'Cesta', detail: 'Añadido a la cesta!!', life: 2000});
-      const resultado = 1;
-      this.$emit('change-cantidad', resultado)
+      this.$toast.add({ severity: 'info', summary: 'Redireccionando...', detail: 'Te llevamos al formulario a completar!', life: 2000 });
+      // const resultado = 1;
+      // this.$emit('change-cantidad', resultado)
     }
   }
 }
@@ -48,9 +49,11 @@ export default {
             <div class="p-4 border-1 surface-border surface-card border-round flex flex-column">
               <div class="surface-50 flex justify-content-center border-round p-3">
                 <div class="relative mx-auto">
+                  <RouterLink to="#">
                   <img class="border-round w-full" :src="`${item.imagen}`" :alt="item.nombre" style="max-width: 300px"/>
                   <Tag :value="item.stock" :severity="getSeverity(item.stock)" class="absolute"
                        style="right: 4px; top: 4px"></Tag>
+                  </RouterLink>
                 </div>
               </div>
               <div class="pt-4">
@@ -68,11 +71,13 @@ export default {
                 </div>
                 <div class="flex flex-column gap-4 mt-4">
                   <span class="text-2xl font-semibold text-900">{{ item.precio }}€</span>
-                  <div class="flex gap-2">
+                  <div class="flex justify-content-center gap-2">
                     <Toast/>
+                    <RouterLink to="/contact" class="decoration" @click="show">
                     <Button icon="pi pi-shopping-cart" @click="show" label="Cómpralo ya!"
                             :disabled="item.stock === 'OUTOFSTOCK'"
-                            class="flex-auto white-space-nowrap"></Button>
+                            class="flex white-space-nowrap"></Button>
+                    </RouterLink>
                   </div>
                 </div>
               </div>
@@ -83,3 +88,9 @@ export default {
     </DataView>
   </div>
 </template>
+
+<style scoped>
+.decoration {
+  text-decoration: none
+}
+</style>

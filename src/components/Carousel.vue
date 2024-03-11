@@ -16,6 +16,7 @@ export default {
     }
   },
   methods: {
+    // Dependiendo del stock saldrá de una forma u otra
     getSeverity(status) {
       switch (status) {
         case 'INSTOCK':
@@ -31,10 +32,11 @@ export default {
           return null;
       }
     },
+    // Muestro por pantalla el mensaje de redireccionando
     show() {
-      this.$toast.add({ severity: 'success', summary: 'Cesta', detail: 'Añadido a la cesta!!', life: 2000 });
-      const resultado = 1;
-      this.$emit('change-cantidad', resultado)
+      this.$toast.add({ severity: 'info', summary: 'Redireccionando...', detail: 'Te llevamos al formulario a completar!', life: 2000 });
+      // const resultado = 1;
+      // this.$emit('change-cantidad', resultado)
     }
   }
 }

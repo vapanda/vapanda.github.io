@@ -1,14 +1,8 @@
 <script>
-import CarouselComponent from "@/components/CarouselComponent.vue";
 import {defineComponent, ref} from "vue";
-import CatalogComponent from "@/components/CatalogComponent.vue";
 
 export default defineComponent ({
   name: "HeaderComponent",
-  components: {
-    CatalogComponent,
-    CarouselComponent
-  },
   data(){
     return{
       cantidad : 0
@@ -32,18 +26,16 @@ export default defineComponent ({
 
     <template #end>
       <RouterLink to="/contact" class="decoration">
-        <h3 class="mr-5 text-black-alpha-90 hover:text-purple-200">Contacto</h3>
+        <h3 class="mr-5 text-black-alpha-90 hover:text-purple-200">CONTACTO</h3>
       </RouterLink>
-      <RouterLink to="#">
-        <i class="pi pi-shopping-cart mr-2 text-black-alpha-90" v-badge="cantidad"  style="font-size: 2rem" />
-      </RouterLink>
+
+      <!-- Cesta llamando a variable que cambia cada vez que pulsa el usuario el botón de comprar-->
+<!--      <RouterLink to="#">-->
+<!--        <i class="pi pi-shopping-cart mr-2 text-black-alpha-90" v-badge="cantidad"  style="font-size: 2rem" />-->
+<!--      </RouterLink>-->
+
     </template>
   </Toolbar>
-
-  <div class="align-items-center mb-5 mt-4 mr-5 ml-5">
-    <CarouselComponent @change-cantidad="ChangedCantidad"/>
-    <CatalogComponent @change-cantidad="ChangedCantidad"/>
-  </div>
 
 </template>
 

@@ -1,70 +1,70 @@
 [
   {
     "nombre": "STRAWBERRY WATERMELON \uD83C\uDF53\u200B \u200B\uD83C\uDF49",
-    "imagen": "https://raw.githubusercontent.com/Alexfp28/vpanda.github.io/master/src/images/Vaper-FresaSandia.png",
+    "imagen": "https://raw.githubusercontent.com/Vapanda/vapanda.github.io/master/src/images/Vaper-FresaSandia.png",
     "stock": "INSTOCK",
     "precio": 10.00,
     "rating": 4
   },
   {
     "nombre": "MIXES BERRIES \u200B\uD83E\uDED0 \u200B\uD83C\uDF47",
-    "imagen": "https://raw.githubusercontent.com/Alexfp28/vpanda.github.io/master/src/images/Vaper-FrutasBosque.png",
+    "imagen": "https://raw.githubusercontent.com/Vapanda/vapanda.github.io/master/src/images/Vaper-FrutasBosque.png",
     "stock": "INSTOCK",
     "precio": 10.00,
     "rating": 4
   },
   {
     "nombre": "STRAWBERRY KIWI \uD83C\uDF53\u200B \u200B\uD83E\uDD5D",
-    "imagen": "https://raw.githubusercontent.com/Alexfp28/vpanda.github.io/master/src/images/Vaper-FresaKiwi.png",
+    "imagen": "https://raw.githubusercontent.com/Vapanda/vapanda.github.io/master/src/images/Vaper-FresaKiwi.png",
     "stock": "INSTOCK",
     "precio": 10.00,
     "rating": 4
   },
   {
     "nombre": "STRAWBERRY ICE \uD83C\uDF53\u200B \uD83E\uDDCA\u200B",
-    "imagen": "https://raw.githubusercontent.com/Alexfp28/vpanda.github.io/master/src/images/Vaper-FresaHielo.png",
+    "imagen": "https://raw.githubusercontent.com/Vapanda/vapanda.github.io/master/src/images/Vaper-FresaHielo.png",
     "stock": "INSTOCK",
     "precio": 10.00,
     "rating": 4
   },
   {
     "nombre": "BlUE RAZZ ICE \u200B\uD83D\uDC8E \uD83E\uDDCA\u200B",
-    "imagen": "https://raw.githubusercontent.com/Alexfp28/vpanda.github.io/master/src/images/Vaper-BlueRazz.png",
+    "imagen": "https://raw.githubusercontent.com/Vapanda/vapanda.github.io/master/src/images/Vaper-BlueRazz.png",
     "stock": "INSTOCK",
     "precio": 10.00,
     "rating": 4
   },
   {
     "nombre": "BLUEBERRY ICE \u200B\uD83E\uDED0 \uD83E\uDDCA\u200B",
-    "imagen": "https://raw.githubusercontent.com/Alexfp28/vpanda.github.io/master/src/images/Vaper-AranadoHielo.png",
+    "imagen": "https://raw.githubusercontent.com/Vapanda/vapanda.github.io/master/src/images/Vaper-AranadoHielo.png",
     "stock": "INSTOCK",
     "precio": 10.00,
     "rating": 4
   },
   {
     "nombre": "PEACH MANGO PINEAPPLE \uD83C\uDF51 \uD83E\uDD6D\u200B \uD83C\uDF4D\u200B",
-    "imagen": "https://raw.githubusercontent.com/Alexfp28/vpanda.github.io/master/src/images/Vaper-MelocMangoPinia.png",
+    "imagen": "https://raw.githubusercontent.com/Vapanda/vapanda.github.io/master/src/images/Vaper-MelocMangoPinia.png",
     "stock": "INSTOCK",
     "precio": 10.00,
     "rating": 4
   },
   {
     "nombre": "WATERMELON ICE \u200B\uD83C\uDF49 \uD83E\uDDCA\u200B",
-    "imagen": "https://raw.githubusercontent.com/Alexfp28/vpanda.github.io/master/src/images/Vaper-SandiaHielo.png",
+    "imagen": "https://raw.githubusercontent.com/Vapanda/vapanda.github.io/master/src/images/Vaper-SandiaHielo.png",
     "stock": "INSTOCK",
     "precio": 10.00,
     "rating": 4
   },
   {
     "nombre": "GRAPE ICE \u200B\uD83C\uDF47 \uD83E\uDDCA\u200B",
-    "imagen": "https://raw.githubusercontent.com/Alexfp28/vpanda.github.io/master/src/images/Vaper-UvaHielo.png",
+    "imagen": "https://raw.githubusercontent.com/Vapanda/vapanda.github.io/master/src/images/Vaper-UvaHielo.png",
     "stock": "INSTOCK",
     "precio": 10.00,
     "rating": 4
   },
   {
     "nombre": "WATERMELON BUBBLEGUM \u200B\uD83C\uDF49 \uD83C\uDF6C\u200B",
-    "imagen": "https://raw.githubusercontent.com/Alexfp28/vpanda.github.io/master/src/images/Vaper-Turquesa.png",
+    "imagen": "https://raw.githubusercontent.com/Vapanda/vapanda.github.io/master/src/images/Vaper-Turquesa.png",
     "stock": "INSTOCK",
     "precio": 10.00,
     "rating": 4

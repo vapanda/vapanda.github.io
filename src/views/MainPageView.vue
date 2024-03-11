@@ -1,9 +1,11 @@
 <script>
-import Home from "@/components/HomeComponent.vue";
-import FooterComponent from "@/components/FooterComponent.vue";
+import Home from "@/components/Header.vue";
+import FooterComponent from "@/components/Footer.vue";
+import CatalogComponent from "@/components/Catalog.vue";
+import CarouselComponent from "@/components/Carousel.vue";
 
 export default {
-  components: {FooterComponent, Home},
+  components: {CarouselComponent, CatalogComponent, FooterComponent, Home},
 };
 
 </script>
@@ -12,6 +14,10 @@ export default {
   <main>
     <div class="card">
       <Home/>
+      <div class="align-items-center mb-5 mt-4 mr-5 ml-5">
+        <CarouselComponent />
+        <CatalogComponent />
+      </div>
     </div>
   </main>
   <FooterComponent/>
